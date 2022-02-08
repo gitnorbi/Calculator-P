@@ -363,7 +363,7 @@ document.querySelector(".calculateResult").addEventListener("click",()=>{
    if(numbersAndOperators!=""){
       let result=eval(forResultnumbersAndOperatorsWhithoutDoubleMinusOrPlus);
     // console.log("eredmeny ",result);
-    document.querySelector(".result").textContent=`The result is: ${result}`;
+    document.querySelector(".result").textContent=`The last result is: ${result}`;
    }
   })
 

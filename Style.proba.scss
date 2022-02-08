@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-size: clamp(19px, 2vw, 1000px);
+    
+  }
+
+  .mainContainer{
+    border-style: solid;
+    background-color:rgb(31, 116, 150); /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right,#d8aeee, #94bfe9);
+    
+    height: 100vh;
+    width: 100vw;
+    //display: flex;
+    //flex-direction: column;
+    
+    //font-size: calc(1vw + 1em);
+
+
+    .resultAndOperation{
+        height: 40%;
+       // display: flex;
+       // flex-direction: column;
+
+        .operatorsAndNumbersContainer{
+            height:60%;
+            border-bottom-style:solid;
+            word-wrap: break-word; // to strat a new line
+            overflow-y: auto;
+        }
+
+        .resultContainer{
+            height:40%;
+            word-wrap: break-word;
+            overflow-y: auto;
+        }
+
+    }
+
+
+    button{
+        background-color:aquamarine; /* For browsers that do not support gradients */
+       // background-image: linear-gradient(to right,#d8aeee, #94bfe9);
+      // font-size: calc(2vw + 1rem);
+       
+        
+        
+    }
+    
+    
+    button:hover{
+        background-color:azure; /* For browsers that do not support gradients */
+        //background-image: linear-gradient(to left,#d8aeee, #94bfe9); 
+        //box-shadow:1vw 1vw 2vw 0.8vw grey;  
+    }
+
+    .return{
+        //font-size:calc(10px + 20%);
+        color: red;
+    }
+
+    .numbersAndOpsContainer{
+        height: 60%;
+        .operatorsContainer{
+            height: 50%;
+            display: flex;
+            flex-wrap: wrap;
+
+            button{
+                width: 25%;
+                flex-grow: 1;
+                background-color:blanchedalmond;
+            }
+
+            button:hover{
+            background-color: azure;
+            }
+
+            
+        }
+
+    .numbersContainer{
+        display: flex;
+        flex-wrap: wrap;
+        height: 50%;
+        //align-items: stretch;
+        
+
+        .numberButton{
+            width: 33%;
+            flex-grow: 1;
+            
+            
+        }
+
+    }
+    }
+
+  }
+
+/*  @media only screen and (min-width:267px){
+    .mainContainer{
+    .return{
+        //font-size: calc(2vw + 1em);
+        color: brown;//törölni
+    }
+}
+}
+*/
+
+@media only screen and (min-width:653px){
+    .mainContainer{
+        width: 85vw;
+        
+    }
+    body{
+        display: flex;
+        justify-content:center;
+        
+        
+    }}
+
+@media only screen and (min-width:900px){
+    .mainContainer{
+        width: 80vw;
+        
+    }
+
+
+}
+
+@media only screen and (min-width:1100px){
+    .mainContainer{
+        width: 70vw;
+        
+    }
+}

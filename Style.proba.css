@@ -1,0 +1,125 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-size: clamp(19px, 2vw, 1000px);
+}
+
+.mainContainer {
+  border-style: solid;
+  background-color: #1f7496;
+  /* For browsers that do not support gradients */
+  background-image: -webkit-gradient(linear, left top, right top, from(#d8aeee), to(#94bfe9));
+  background-image: linear-gradient(to right, #d8aeee, #94bfe9);
+  height: 100vh;
+  width: 100vw;
+}
+
+.mainContainer .resultAndOperation {
+  height: 40%;
+}
+
+.mainContainer .resultAndOperation .operatorsAndNumbersContainer {
+  height: 60%;
+  border-bottom-style: solid;
+  word-wrap: break-word;
+  overflow-y: auto;
+}
+
+.mainContainer .resultAndOperation .resultContainer {
+  height: 40%;
+  word-wrap: break-word;
+  overflow-y: auto;
+}
+
+.mainContainer button {
+  background-color: aquamarine;
+  /* For browsers that do not support gradients */
+}
+
+.mainContainer button:hover {
+  background-color: azure;
+  /* For browsers that do not support gradients */
+}
+
+.mainContainer .return {
+  color: red;
+}
+
+.mainContainer .numbersAndOpsContainer {
+  height: 60%;
+}
+
+.mainContainer .numbersAndOpsContainer .operatorsContainer {
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.mainContainer .numbersAndOpsContainer .operatorsContainer button {
+  width: 25%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: blanchedalmond;
+}
+
+.mainContainer .numbersAndOpsContainer .operatorsContainer button:hover {
+  background-color: azure;
+}
+
+.mainContainer .numbersAndOpsContainer .numbersContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 50%;
+}
+
+.mainContainer .numbersAndOpsContainer .numbersContainer .numberButton {
+  width: 33%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+/*  @media only screen and (min-width:267px){
+    .mainContainer{
+    .return{
+        //font-size: calc(2vw + 1em);
+        color: brown;//törölni
+    }
+}
+}
+*/
+@media only screen and (min-width: 653px) {
+  .mainContainer {
+    width: 85vw;
+  }
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .mainContainer {
+    width: 80vw;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .mainContainer {
+    width: 70vw;
+  }
+}
